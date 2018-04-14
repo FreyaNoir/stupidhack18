@@ -1,1 +1,2 @@
 # stupidhack18
+This is a calculator. But not your basic boring desktop calculator. It's a game! You enter numbers by collecting the right number of cookies and then select the right operator and press equals to get your result! But be quick to write it down because the cookie monster will eat it away if you're not fast enough.
