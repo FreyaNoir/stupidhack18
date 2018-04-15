@@ -5,16 +5,14 @@ html, body, header {
     outline: 0;
     font-size: 100%;
     vertical-align: baseline;
-    background: transparent;
+    min-width: 100%;
+    display: block;
 }
 
 body {
     font-family: "Comic Sans MS", cursive, sans-serif;
-    background-position: center;
-    background-size: 100%;
-    background-color: rgb(25,38,70);
+    background-position: center; 
 }
-
 h1 {
     color: purple;
     text-align: left;
@@ -28,7 +26,8 @@ h2 {
     text-align: right;
     font-size: 35px;
     -webkit-text-stroke: 0.7px orangered;
-    padding: 50px 60px 50px 50px;
+    padding: 0px 50px 0px 200px;
+    margin-bottom: 20ox;
 }
  #rulz {
      color:red;
@@ -42,64 +41,93 @@ h2 {
     position: relative;
 }
 #postit2 {
-    padding : 20px 20px 20px 20px;
+    padding : 0px 0px 20px 20px;
     position: relative;
     float: right;
 }
-.btn {
-    align-content: center;
-    float: left;
+#btn {
+    margin-right: 200px;
+    margin-left: 100px;
     color: rgba(56, 3, 247, 0.911);
     font-size: 25px;
     background-color: rgb(225, 169, 247);
-    padding: 5px 5px 5px 5px;
+    padding: 3px 3px 3px 3px;
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
-.btn--margin {
-    margin-right: 75px;
-    margin-top: 80px;
-}
-.btn:hover {
+#btn:hover {
     background-color: rgb(1, 124, 73);
     color: rgb(255, 115, 0);
     cursor: pointer;
 }
+#button {
+  margin: 50px 50px 50px 50px;
+}
+.btn-reset {
+    align-content: center;
+    color: rgba(56, 3, 247, 0.911);
+    font-size: 25px;
+    background-color: rgb(225, 169, 247);
+    padding: 5px 5px 5px 5px;
+    display: block;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
 .container1 {
-    background-image: url(./img/container.jpg);
-    background-repeat: round;
-    height: 100%;
-    width: 100%;
+  width: 450px; 
+  height: 790px;
+  background-size:cover;
+  background-image: url(./img/container.jpg);
+  background-repeat: no-repeat;
 }
 .container2 {
-    /*height: 900px;*/
-    width: 800px;
-    margin: auto;
+    background-image: url(./img/cookiemonster.jpg);
+    background-repeat: repeat;
+    margin-top: 0px;
+    height: 650px;
 }
+@media only screen and (max-width: 320px) {
+  .container1, container2 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 1023px) {
+  .container1, container2 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .container1, container2 {
+    width: 100%;
+    
+  }
+}
+
 #topOfIt, #header2{
     background-image: url(./img/header.png);
-    background-repeat: round;
+    min-width: 100%;
 }
 #topOfIt {
-    background-color: rgb(32,140,213);
-    height: 200px;
+    background-repeat: repeat-x;
 }
 #header2 {
-    height: 100px;
+   min-width: 100%;
+   display: inherit;
+   margin-bottom: 0px;
+   height: 145px;
 }
 #copyright{
     color: lightskyblue;
     padding : 20px 20px 20px 20px;
 }
 #bottomOfItAll { 
-    background-image: url(./img/footer.png);
-    min-height: 200px;
-    background-repeat: round;
+    background-image: url(../img/footersmall.png);
+    height: 183px;
+    background-repeat:repeat-x;
+    min-width: 100%;
+    background-color: navy;
 }
-canvas {
-    background-image: url(./img/cookiemonster.jpg);
-    background-repeat: round;
-    padding-left: 0;
-    padding-right: 0;
+#canvas {
+    background-color: white; 
     margin-left: auto;
     margin-right: auto;
     display: block;
