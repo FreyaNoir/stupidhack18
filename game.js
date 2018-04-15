@@ -257,7 +257,7 @@ const calculator = {
 
         if (typeof result === 'number') {
             const flr = Math.floor(result);
-            if (flr !== result && (result <= -10 || result >= 1000)) {
+            if (flr !== result && (result <= -10 || result >= 100)) {
                 result = flr;
             }
             if (result > 999 || result < -99) {
